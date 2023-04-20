@@ -43,7 +43,7 @@ module.exports = {
         'no-mixed-spaces-and-tabs': 0,
         'no-tabs': 0,
         'i18next/no-literal-string': ['error', { markupOnly: true }],
-        'max-len': ['error', { ignoreComments: true }],
+        'max-len': ['warn', { ignoreComments: true }],
     },
     globals: {
         __IS_DEV__: true,
