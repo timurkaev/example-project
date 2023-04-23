@@ -7,7 +7,6 @@ module.exports = {
     extends: [
         'plugin:react/recommended',
         'airbnb',
-        'plugin:i18next/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -42,8 +41,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'no-mixed-spaces-and-tabs': 0,
         'no-tabs': 0,
-        'i18next/no-literal-string': ['error', { markupOnly: true }],
-        'max-len': ['warn', { ignoreComments: true }],
+        'max-len': ['warn', { ignoreComments: true, code: 100 }],
     },
     globals: {
         __IS_DEV__: true,
